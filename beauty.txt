@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glow Beauty Store</title>
+
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff0f6;
+        }
+
+        header {
+            background-color: #c71585;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #a0136d;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 220px;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 140px;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #c71585;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #a0136d;
+        }
+
+        footer {
+            background-color: #c71585;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>💄 Glow Beauty Store</h1>
+    <p>Natural • Elegant • Beautiful</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Our Beauty Products</h2>
+
+    <div class="products">
+        <div class="card">
+            <img src="file:///C:/Users/user/Pictures/beauty/lipstick.jpg">
+            <h3>Matte Lipstick</h3>
+            <p>₹499</p>
+            <button onclick="buy('Matte Lipstick')">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="file:///C:/Users/user/Pictures/beauty/foundation.jpg">
+            <h3>Liquid Foundation</h3>
+            <p>₹799</p>
+            <button onclick="buy('Liquid Foundation')">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="file:///C:/Users/user/Pictures/beauty/facecream.jpg">
+            <h3>Face Cream</h3>
+            <p>₹349</p>
+            <button onclick="buy('Face Cream')">Buy Now</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>📞 Contact: 9876543210 | 📍 Guntur, Andhra Pradesh</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    function buy(item) {
+        alert("You have successfully purchased " + item + "! 💖");
+    }
+</script>
+
+</body>
+</html>
